@@ -17,7 +17,7 @@ func NewSession(url string) (Session, error) {
 	client := req.C()
 	client.Headers = make(http.Header)
 	client.Headers.Set("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36")
-	client.DevMode()
+	//client.DevMode()
 	hash := submatches[1]
 	return &sessionImpl{
 		RingoHash: hash,
