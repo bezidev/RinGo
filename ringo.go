@@ -12,4 +12,5 @@ type sessionImpl struct {
 }
 
 type Session interface {
+	DoorUnlock(lockId int, relayId *int, pin *int) (err error)
 }
